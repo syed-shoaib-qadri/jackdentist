@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dentist Appointment</title>
+  <link rel="stylesheet" href="appointment.css" />
+</head>
+
+<body>
+
+  <header class="header">
+    <div id="img">
+      <img src="dentist.png" alt="Dentist logo" height="60" />
+      <h1>Dentist-Jack</h1>
+    </div>
+    <nav id="nav">
+      <ul>
+        <li><a class="and" href="/index.html">Home</a></li>
+        <li><a class="and" href="/about.html">About Us</a></li>
+        <li><a class="and" href="/contact.html">Contact</a></li>
+        <li><a class="and" href="/login.html">Login / Sign-Up</a></li>
+      </ul>
+    </nav>
+    <div id="btn">
+      <a href="/appointment.html">
+        <button type="button">Book An Appointment</button>
+      </a>
+    </div>
+  </header>
+
+  <section id="hero">
+    <div class="form-container">
+      <h2>Book Your Treatment</h2>
+      <form id="booking-form">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+        <label for="timing">Preferred Timing</label>
+        <select id="timing" name="timing" required>
+          <option value="">-- Select Timing --</option>
+          <option value="morning">Morning (8AM - 12PM)</option>
+          <option value="afternoon">Afternoon (12PM - 4PM)</option>
+          <option value="evening">Evening (4PM - 8PM)</option>
+        </select>
+
+        <label>Treatment Options</label>
+        <div class="treatment-options">
+          <label><input type="checkbox" name="treatment" value="implants" /> Implants</label>
+          <label><input type="checkbox" name="treatment" value="braces" /> Braces</label>
+          <label><input type="checkbox" name="treatment" value="whitening" /> Whitening</label>
+          <label><input type="checkbox" name="treatment" value="cleaning" /> Cleaning</label>
+          <label><input type="checkbox" name="treatment" value="root-canal" /> Root Canal</label>
+          <label><input type="checkbox" name="treatment" value="pediatric" /> Pediatric</label>
+        </div>
+
+        <div class="checkbox-container">
+          <label><input type="checkbox" required /> I agree to the terms and conditions</label>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit</button>
+
+      </form>
+
+
+
+      <!-- Thank You Message -->
+      <p id="thank-you" class="thank-you-msg">Thanks for booking!</p>
+    </div>
+  </section>
+
+  <script src="appointment.js"></script>
+  <div>
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2025 Dr. Jack's Dental Clinic. All rights reserved.</p>
+        <p>123 Smile Street, Toothville, NY | Phone: (123) 456-7890</p>
+        <p>
+          <a href="#">Privacy Policy</a> |
+          <a href="#">Terms of Service</a>
+        </p>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+
+</html>

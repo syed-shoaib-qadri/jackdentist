@@ -1,0 +1,238 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(0, 0%, 94%);
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
+
+#img {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#img img {
+  height: 60px;
+}
+
+#img h1 {
+  font-size: 1.5rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #399af0;
+}
+
+#btn button {
+  background-color: rgb(54, 127, 223);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#btn button:hover {
+  background-color: #0056b3;
+}
+#img2 {
+
+    background-color: rgb(79, 133, 202);
+    width: 400px;
+    height: 450px;
+    border-style: none;
+    border-radius: 16px;
+}
+
+
+    #txt{
+        background-color: hsl(0, 0%, 94%);
+        border-style: none;
+    border-radius: 16px;
+    margin-left: 20px;
+    padding-left: 15px;
+   padding-right: 15px;
+}
+
+
+    
+
+#its{
+    display: flex;
+    margin-top: 30px;
+}
+
+#head{
+    text-align: center;
+    background-color:hsl(0, 0%, 94%) ;
+}
+#txxt{
+    text-align: center;
+    background-color:hsl(0, 0%, 94%) ;
+}
+
+#txxxt{
+    text-align: center;
+    background-color:hsl(0, 0%, 94%) ;
+}
+#heed{
+    text-align: center;
+    background-color:hsl(0, 0%, 94%) ;
+}
+/* Container for all circles */
+.facility-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+  animation: fadeIn 1s ease-in;
+}
+
+/* Each facility circle */
+.facility {
+  width: 120px;
+  height: 120px;
+  background-color: #e0f0ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: zoomIn 0.8s ease forwards;
+}
+
+/* Hover effect */
+.facility:hover {
+  transform: scale(1.1) rotate(2deg);
+  box-shadow: 0 0 25px rgba(54, 127, 223, 0.5);
+  background-color: #cfe8ff;
+  cursor: pointer;
+}
+
+/* Zoom in on load */
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Fade-in animation for whole section */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.facility {
+  width: 120px;
+  height: 120px;
+  background-color: #e0f0ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+  /* 👇 This is the floating movement */
+  animation: floatMove 3s ease-in-out infinite;
+}
+ 
+@keyframes floatMove {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.footer {
+  background-color: hsl(0, 0%, 94%);
+  color: rgb(80, 186, 235);
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 50px;
+}
+
+.footer a {
+  color: #399af0;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+#head{
+  margin-top: 20px;
+}
+#moona{
+  margin-top: 20px;
+}
+#moon{
+  margin-top: 20px;
+}
+.noob{
+  text-decoration: none;
+  color: #333;
+}
+.noob:hover{
+  color: #3290e2;
+}
+#txxxt{
+  margin-top: 20px;
+}
+
+
+
